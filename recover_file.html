@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+
+<!-- BEGIN HEAD -->
+
+<head>
+
+	<meta charset="utf-8" />
+
+	<title>文件恢复</title>
+
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+	<meta content="" name="description" />
+
+	<meta content="" name="author" />
+
+	<!-- BEGIN GLOBAL MANDATORY STYLES -->
+	<link rel="icon" href="media/image/dsg-logo2.png" type="image/x-icon">
+
+	<link rel="stylesheet" href="media/css/recover_file.css" type="text/css">
+
+	<link href="media/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+	<link href="media/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+
+	<link href="media/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+	<link href="media/css/font-awesome2.min.css" rel="stylesheet" type="text/css"/>
+
+	<link href="media/css/style-metro.css" rel="stylesheet" type="text/css"/>
+
+	<link href="media/css/style.css" rel="stylesheet" type="text/css"/>
+
+	<link href="media/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+
+	<link href="media/css/light.css" rel="stylesheet" type="text/css" id="style_color"/>
+
+	<link href="media/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+
+	<!-- END GLOBAL MANDATORY STYLES -->
+
+	<!-- BEGIN PAGE LEVEL STYLES -->
+
+	<link rel="stylesheet" type="text/css" href="media/css/select2_metro.css" />
+
+	<link rel="stylesheet" type="text/css" href="media/css/bootstrap-modal.css" />
+
+	<link rel="stylesheet" href="media/css/DT_bootstrap.css" />
+
+	<!-- END PAGE LEVEL STYLES -->
+
+<!--	<link rel="shortcut icon" href="media/image/favicon.ico" />-->
+
+	<link rel="stylesheet" type="text/css" href="media/jquery-confirm-master/css/jquery-confirm.css">
+
+	<style type="text/css">
+		ul>li{
+           list-style-type: none;
+
+		}
+		.ulpadding{
+			height: 166px !important;
+			margin: 0 0 -18px 25px !important;
+		}
+		.ulpadding>li{
+
+		}
+		.closec{
+			background-image: none !important;
+		}
+		.jconfirm-type-animated{
+			width:300px !important;
+			margin-top:80px !important;
+
+		}
+		</style>
+
+</head>
+
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+
+<body class="page-header-fixed">
+
+	<!-- BEGIN HEADER -->
+
+	<div class="header navbar navbar-inverse navbar-fixed-top">
+
+		<!-- BEGIN TOP NAVIGATION BAR -->
+
+		<div class="navbar-inner">
+
+			<div class="container-fluid">
+
+				<!-- BEGIN LOGO -->
+
+				<a class="brand" href="index.html">
+
+					<img src="media/image/dsg-logo.png" alt="logo"/>
+
+				</a>
+
+				<!-- END LOGO -->
+
+				<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+
+				<a href="javascript:;" class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+
+					<img src="media/image/menu-toggler.png" alt="" />
+
+				</a>
+
+				<!-- END RESPONSIVE MENU TOGGLER -->
+
+				<!-- BEGIN TOP NAVIGATION MENU -->
+
+				<ul class="nav pull-right">
+
+					<!-- BEGIN NOTIFICATION DROPDOWN -->
+
+
+					<!-- END TODO DROPDOWN -->
+
+					<!-- BEGIN USER LOGIN DROPDOWN -->
+
+					<li class="dropdown user" style="margin-top:7px">
+
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+							<i class="icon-user icon-3x"></i>
+
+							<span class="username">admin</span>
+
+							<i class="icon-angle-down"></i>
+
+						</a>
+
+						<ul class="dropdown-menu cs3">
+
+							<li><a href="javascript:void(0)" class="version_message"><i class="fa fa-info-circle"></i>关于</a></li>
+
+							<li><a href="javascript:void(0)" class="return_main"><i class="fa fa-arrow-circle-left"></i>返回主界面</a></li>
+
+							<li><a href="javascript:void(0)" class="logout"><i class="icon-key"></i>退出登陆</a></li>
+
+						</ul>
+
+					</li>
+
+					<!-- END USER LOGIN DROPDOWN -->
+
+				</ul>
+
+				<!-- END TOP NAVIGATION MENU -->
+
+			</div>
+
+		</div>
+
+		<!-- END TOP NAVIGATION BAR -->
+
+	</div>
+
+	<!-- END HEADER -->
+
+	<!-- BEGIN CONTAINER -->
+
+	<div class="page-container row-fluid">
+
+		<!-- BEGIN SIDEBAR -->
+
+		<div class="page-sidebar nav-collapse collapse">
+
+			<!-- BEGIN SIDEBAR MENU -->
+
+			<ul class="page-sidebar-menu">
+
+				<li>
+
+					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+
+					<div class="sidebar-toggler hidden-phone"></div>
+
+					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+
+				</li>
+
+				<li>
+
+					<a href="javascript:;">
+
+						<i class="fa fa-jsfiddle fa-fw"></i>
+
+						<span class="title">灾备中心</span>
+
+						<span class="arrow"></span>
+
+					</a>
+
+					<ul class="sub-menu">
+
+						<li>
+							<a href="index.html">
+								<i class="fa fa-list fa-fw"></i>
+								概况
+							</a>
+
+						</li>
+
+						<li >
+							<a href="backup_data.html">
+
+								<i class="fa fa-desktop fa-fw"></i>
+
+								虚拟机备份数据</a>
+
+						</li>
+						<li >
+							<a href="backup_report.html">
+								<i class="fa fa-newspaper-o fa-fw"></i>
+								虚拟机备份报告</a>
+						</li>
+					</ul>
+
+				</li>
+
+				<li>
+
+					<a href="javascript:;">
+
+						<i class="fa fa-cloud-upload fa-fw"></i>
+
+						<span class="title">备份</span>
+
+						<span class="arrow "></span>
+
+					</a>
+
+					<ul class="sub-menu">
+
+						<li >
+
+							<a href="backup.html">
+								<i class="fa fa-desktop fa-fw"></i>
+
+								虚拟机备份</a>
+
+						</li>
+
+
+					</ul>
+
+				</li>
+
+				<li class="active">
+
+					<a href="javascript:;">
+
+						<i class="fa fa-cloud-download fa-fw"></i>
+
+						<span class="title">恢复</span>
+
+						<span class="arrow "></span>
+
+					</a>
+
+					<ul class="sub-menu">
+
+						<li >
+
+							<a href="recover_virtual_machine.html">
+
+								<i class="fa fa-desktop fa-fw"></i>
+
+								虚拟机恢复</a>
+
+						</li>
+
+
+						<li >
+
+							<a href="recover_virtual_machine_in.html">
+
+								<i class="fa fa-bolt fa-fw"></i>
+
+								虚拟机瞬时恢复</a>
+
+						</li>
+						<li class="active">
+							<a href="recover_file.html">
+								<i class="fa fa-file fa-fw">
+								</i>
+								文件恢复
+							</a>
+						</li>
+
+					</ul>
+
+				</li>
+
+				<li>
+
+					<a href="javascript:;">
+
+						<i class="fa fa-tasks fa-fw"></i>
+
+						<span class="title">任务</span>
+
+						<span class="arrow "></span>
+
+					</a>
+
+					<ul class="sub-menu">
+
+						<li>
+
+							<a href="all_task.html">
+
+								<i class="fa fa-table fa-fw"></i>
+
+								所有任务</a>
+
+						</li>
+
+						<li >
+
+							<a href="task_status.html">
+
+								<i class="fa fa-tachometer fa-fw"></i>
+
+								任务状态</a>
+
+						</li>
+
+						<li>
+
+							<a href="history_tasks.html">
+
+								<i class="fa fa-history fa-fw"></i>
+
+								历史任务</a>
+
+						</li>
+
+					</ul>
+
+				</li>
+
+
+				<li class="">
+
+					<a href="javascript:;">
+
+						<i class="fa fa-list-alt fa-fw"></i>
+
+						<span class="title">日志</span>
+
+						<span class="arrow "></span>
+
+					</a>
+
+					<ul class="sub-menu">
+
+						<li >
+
+							<a href="task_action_log.html">
+								<i class="fa fa-fw fa-edit"></i>
+
+								任务操作日志</a>
+
+						</li>
+
+						<!--<li >
+
+							<a href="system_action_log.html">
+
+								<i class="fa fa-fw fa-cogs"></i>
+
+								系统操作日志</a>
+
+						</li>-->
+
+					</ul>
+
+				</li>
+
+				<!--<li class="">
+
+					<a href="javascript:;">
+
+						<i class="fa fa-bell fa-fw"></i>
+
+						<span class="title">告警</span>
+
+						<span class="arrow "></span>
+
+					</a>
+
+					<ul class="sub-menu">
+
+						<li >
+
+							<a href="system_alarm.html">
+
+								<i class="fa fa-fw fa-cogs"></i>
+
+								系统告警</a>
+
+						</li>
+
+						<li >
+
+							<a href="task_alarm.html">
+
+								<i class="fa fa-fw fa-edit"></i>
+
+								任务告警</a>
+
+						</li>
+					</ul>
+
+				</li>-->
+
+				<li class="">
+
+					<a href="javascript:;">
+
+						<i class="fa fa-codepen fa-fw"></i>
+
+						<span class="title">虚拟化中心</span>
+
+						<span class="arrow "></span>
+
+					</a>
+
+					<ul class="sub-menu">
+
+						<li >
+
+							<a href="add_virtualization.html">
+
+								<i class="glyphicon glyphicon-plus"></i>
+
+								添加虚拟化中心</a>
+
+						</li>
+
+						<li >
+
+							<a href="virtualization.html">
+
+								<i class="glyphicon glyphicon-cog"></i>
+
+								虚拟化中心管理</a>
+
+						</li>
+
+					</ul>
+
+				</li>
+
+				<li class=" ">
+
+					<a href="#">
+
+						<i class="fa fa-cog fa-fw"></i>
+
+						<span class="title">系统配置</span>
+
+						<span class="arrow"></span>
+
+					</a>
+					<ul class="sub-menu">
+
+						<li >
+
+							<a href="pzmanager.html">
+
+								<i class="fa fa-wrench fa-fw"></i>
+
+								配置管理</a>
+
+						</li>
+
+					</ul>
+
+				</li>
+
+			</ul>
+
+			<!-- END SIDEBAR MENU -->
+
+
+			<!-- END SIDEBAR MENU -->
+
+		</div>
+
+		<!-- END SIDEBAR -->
+
+		<!-- BEGIN PAGE -->
+
+		<div class="page-content">
+
+			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+
+			<div id="portlet-config" class="modal hide">
+
+				<div class="modal-header">
+
+					<button data-dismiss="modal" class="close" type="button"></button>
+
+					<h3>portlet Settings</h3>
+
+				</div>
+
+				<div class="modal-body">
+
+					<p>Here will be a configuration form</p>
+
+				</div>
+
+			</div>
+
+			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+
+			<!-- BEGIN PAGE CONTAINER-->        
+
+			<div class="container-fluid">
+
+				<!-- BEGIN PAGE HEADER-->
+
+				<div class="row-fluid">
+
+					<div class="span12">
+
+						<!-- BEGIN STYLE CUSTOMIZER -->
+
+						<div class="color-panel hidden-phone">
+
+							<div class="color-mode-icons icon-color"></div>
+
+							<div class="color-mode-icons icon-color-close"></div>
+
+							<div class="color-mode">
+
+								<p>主题颜色</p>
+
+								<ul class="inline">
+
+									<li class="color-black color-default" data-style="default"></li>
+
+									<li class="color-blue" data-style="blue"></li>
+
+									<li class="color-brown" data-style="brown"></li>
+
+									<li class="color-purple" data-style="purple"></li>
+
+									<li class="color-grey" data-style="grey"></li>
+
+									<li class="color-white color-light current" data-style="light"></li>
+
+								</ul>
+
+								<label>
+
+									<span>布局</span>
+
+									<select class="layout-option m-wrap small">
+
+										<option value="fluid" selected>流布局</option>
+
+										<option value="boxed">盒布局</option>
+
+									</select>
+
+								</label>
+
+
+								<label>
+
+									<span>工具栏</span>
+
+									<select class="sidebar-option m-wrap small">
+
+										<option value="fixed">自动</option>
+
+										<option value="default" selected>默认</option>
+
+									</select>
+
+								</label>
+								<label>
+
+									<span>页头</span>
+
+									<select class="header-option m-wrap small">
+
+										<option value="fixed" selected>固定</option>
+
+										<option value="default">默认</option>
+
+									</select>
+
+								</label>
+								<label>
+
+									<span>页脚</span>
+
+									<select class="footer-option m-wrap small">
+
+										<option value="fixed">固定</option>
+
+										<option value="default" selected>默认</option>
+
+									</select>
+
+								</label>
+
+							</div>
+
+
+						</div>
+
+						<!-- END BEGIN STYLE CUSTOMIZER -->
+
+						<!-- BEGIN PAGE TITLE & BREADCRUMB-->
+
+						<h3 class="page-title">
+
+							文件恢复 <small>对目标文件进行恢复</small>
+
+						</h3>
+
+
+					</div>
+
+
+				</div>
+
+				<!-- END PAGE HEADER-->
+
+				<!-- BEGIN PAGE CONTENT-->
+
+				<div class="row-fluid">
+
+
+					<div class="span12">
+						<div class="portlet box green">
+
+							<div class="portlet-title">
+
+								<div class="caption"><i class="icon-globe"></i>请选择主机</div>
+
+								<div class="tools">
+
+									<a href="javascript:;" class="collapse"></a>
+
+									<a href="javascript:;" class="reload"></a>
+
+
+								</div>
+
+							</div>
+
+							<div class="portlet-body">
+
+						<ul class="ulpadding">
+
+						</ul>
+							</div>
+</div>
+						<!-- BEGIN EXAMPLE TABLE PORTLET-->
+
+
+						<!-- END EXAMPLE TABLE PORTLET-->
+
+					</div>
+
+						<!-- END EXAMPLE TABLE PORTLET-->
+
+						<!-- BEGIN EXAMPLE TABLE PORTLET-->
+
+						<div class="portlet box blue">
+
+							<div class="portlet-title">
+
+								<div class="caption"><i class="icon-globe"></i>请选择虚拟机</div>
+
+								<div class="tools">
+
+									<a href="javascript:;" class="collapse"></a>
+
+									<a href="javascript:;" class="reload"></a>
+
+
+								</div>
+
+
+
+							</div>
+
+							<div class="portlet-body">
+
+								<table class="table table-striped table-bordered table-hover table-full-width" id="sample_2">
+
+									<thead>
+
+										<tr>
+
+											<th>编号</th>
+
+											<th>名称</th>
+
+											<th class="hidden-480">虚拟机编号</th>
+
+											<th class="hidden-480">版本个数</th>
+
+											<th class="hidden-480">主机编号</th>
+
+										</tr>
+
+									</thead>
+
+									<tbody id="virtual_machine">
+
+									</tbody>
+
+								</table>
+
+							</div>
+
+						</div>
+
+						<!-- END EXAMPLE TABLE PORTLET-->
+
+					</div>
+
+				</div>
+
+				<!-- END PAGE CONTENT-->
+
+			</div>
+
+			<!-- END PAGE CONTAINER-->
+
+		</div>
+
+		<!-- END PAGE -->
+
+	</div>
+
+	<!-- END CONTAINER -->
+
+	<!-- BEGIN FOOTER -->
+
+	<div class="footer">
+
+		<div class="footer-inner">
+
+			Copyright 2017-2022 <a href="http://www.dsgdata.com/" >www.dsgdata.com</a> 迪思杰 京ICP备05013295号
+
+		</div>
+
+		<div class="footer-tools">
+
+			<span class="go-top">
+
+			<i class="icon-angle-up"></i>
+
+			</span>
+
+		</div>
+
+	</div>
+
+	<!-- END FOOTER -->
+
+	<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+
+	<!-- BEGIN CORE PLUGINS -->
+	<!-- 模态框（Modal） -->
+	<div class="modal hide fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close closec" data-dismiss="modal" aria-hidden="true">
+						&times;
+					</button>
+					<h4 class="modal-title" id="myModalLabel">
+					</h4>
+				</div>
+				<div class="modal-body" style="max-height: 292px">
+					<div class="input-group" style="display: block !important;">
+						<div class="form-group">
+							<div class="portlet box red">
+
+								<div class="portlet-title">
+
+									<div class="caption"><i class="icon-globe"></i>请选择版本号</div>
+								</div>
+
+								<div class="portlet-body">
+
+									<table class="table table-striped table-bordered table-hover table-full-width" >
+
+										<thead>
+
+										<tr>
+
+											<th>版本号</th>
+
+											<th>开始时间</th>
+
+											<th class="hidden-480">结束时间</th>
+
+											<th class="hidden-480">磁盘个数</th>
+
+											<th class="hidden-480">磁盘总大小（GB）</th>
+
+											<th class="hidden-480">状态</th>
+
+										</tr>
+
+										</thead>
+
+										<tbody id="version_number">
+
+										</tbody>
+
+									</table>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+					</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal -->
+	</div>
+	<!-- 模态框（Modal） -->
+	<div class="modal hide fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close closec" data-dismiss="modal" aria-hidden="true">
+						&times;
+					</button>
+					<h4 class="modal-title" id="myModalLabel2">
+						选择磁盘
+					</h4>
+				</div>
+				<div class="modal-body " style="background: #f8f8f8;max-height: 292px">
+									<ul id="disk_ul">
+                                    </ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+					</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal -->
+	</div>
+	<!-- 模态框（Modal） -->
+	<div class="modal hide fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close closec" data-dismiss="modal" aria-hidden="true">
+						&times;
+					</button>
+					<h4 class="modal-title" id="myModalLabel3">
+						选择磁盘分区
+					</h4>
+				</div>
+				<div class="modal-body " style="background: #f8f8f8;max-height: 292px">
+					<ul id="disk_ul2">
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+					</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal -->
+	</div>
+	<!--缓冲-->
+	<div class="spinner">
+		<div class="spinner-container container1">
+			<div class="circle1"></div>
+			<div class="circle2"></div>
+			<div class="circle3"></div>
+			<div class="circle4"></div>
+		</div>
+		<div class="spinner-container container2">
+			<div class="circle1"></div>
+			<div class="circle2"></div>
+			<div class="circle3"></div>
+			<div class="circle4"></div>
+		</div>
+		<div class="spinner-container container3">
+			<div class="circle1"></div>
+			<div class="circle2"></div>
+			<div class="circle3"></div>
+			<div class="circle4"></div>
+		</div>
+	</div>
+	<!--虚化界面-->
+	<div class="black_overlay">
+
+
+	</div>
+
+	<script src="media/js/localhost.js" type="text/javascript"></script>
+
+	<script src="media/js-plus-in/jquery-1.10.1.min.js" type="text/javascript"></script>
+
+	<script src="media/js-plus-in/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+
+	<!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+
+	<script src="media/js-plus-in/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+
+	<script src="media/js-plus-in/bootstrap.min.js" type="text/javascript"></script>
+
+	<!--[if lt IE 9]>
+
+    <script src="media/js-plus-in/excanvas.min.js"></script>
+
+    <script src="media/js-plus-in/respond.min.js"></script>
+
+    <![endif]-->
+
+	<script src="media/js-plus-in/jquery.slimscroll.min.js" type="text/javascript"></script>
+
+	<script src="media/js-plus-in/jquery.blockui.min.js" type="text/javascript"></script>
+
+	<script src="media/js-plus-in/jquery.cookie.min.js" type="text/javascript"></script>
+
+	<script src="media/js-plus-in/jquery.uniform.min.js" type="text/javascript" ></script>
+
+	<!-- END CORE PLUGINS -->
+
+	<!-- BEGIN PAGE LEVEL PLUGINS -->
+
+	<script type="text/javascript" src="media/js-plus-in/select2.min.js"></script>
+
+	<script type="text/javascript" src="media/js-plus-in/jquery.dataTables.min.js"></script>
+
+	<script type="text/javascript" src="media/js-plus-in/DT_bootstrap.js"></script>
+
+	<!-- END PAGE LEVEL PLUGINS -->
+
+	<!-- BEGIN PAGE LEVEL SCRIPTS -->
+
+	<script src="media/js-plus-in/app.js"></script>
+
+	<script src="media/js/table-advanced.js"></script>
+
+	<script src="media/js/user_message.js" type="text/javascript"></script>
+
+	<script src="media/js/recover_file.js"></script>
+
+	<script  src="media/jquery-confirm-master/js/jquery-confirm.js"></script>
+
+	<script  src="media/js-plus-in/bootstrap-modalmanager.js"></script>
+
+	<script  src="media/js-plus-in/bootstrap-modal.js"></script>
+
+</body>
+<script>
+
+	jQuery(document).ready(function() {
+
+		App.init();
+
+		$("#sample_2").dataTable({
+			"aLengthMenu": [
+				[5, 15, 20, -1],
+				[5, 15, 20, "All"] // change per page values here
+			],
+			language: {
+				"sProcessing": "处理中...",
+				"sLengthMenu": "显示 _MENU_ 项结果",
+				"sZeroRecords": "没有匹配结果",
+				"sInfo": "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",
+				"sInfoEmpty": "显示第 0 至 0 项结果，共 0 项",
+				"sInfoFiltered": "(由 _MAX_ 项结果过滤)",
+				"sInfoPostFix": "",
+				"sSearch": "搜索:",
+				"sUrl": "",
+				"sEmptyTable": "表中数据为空",
+				"sLoadingRecords": "载入中...",
+				"sInfoThousands": ",",
+				"oPaginate": {
+					"sFirst": "首页",
+					"sPrevious": "上页",
+					"sNext": "下页",
+					"sLast": "末页"
+				},
+				"oAria": {
+					"sSortAscending": ": 以升序排列此列",
+					"sSortDescending": ": 以降序排列此列"
+				}
+			},
+		})
+
+	});
+
+</script>
+<!-- END BODY -->
+
+</html>
